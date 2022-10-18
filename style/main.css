@@ -1,3 +1,4 @@
+@import url(normalize.css);
 @import url(nav.css);
 
 @font-face {
@@ -9,7 +10,14 @@
     font-family: "Poppins";
     letter-spacing: 1.2;
     line-height: 1.2;
+    font-size: 20px;
 
     --backround: #fff;
     --color: #000;
+}
+
+@media screen and (min-width: 426px){
+    .mobile-only {
+        display: none; 
+    }
 }
