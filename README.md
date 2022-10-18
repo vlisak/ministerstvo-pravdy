@@ -1,0 +1,3 @@
+# ministerstvo-pravdy
+
+Školní projekt
