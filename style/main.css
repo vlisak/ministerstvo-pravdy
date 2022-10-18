@@ -1,0 +1,15 @@
+@import url(nav.css);
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins-Regular.ttf) format("truetype");
+}
+
+:root {
+    font-family: "Poppins";
+    letter-spacing: 1.2;
+    line-height: 1.2;
+
+    --backround: #fff;
+    --color: #000;
+}
