@@ -1,8 +1,18 @@
 .main-nav {
-    box-sizing: border-box;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box; /* Pro šířku na 100% viewportu*/
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     padding: 0.5rem;
+    background-color: var(--background);
+}
+
+.main-nav__hamburger {
+    display: none;
+    cursor: pointer;
+    margin: 0.5rem;
 }
 
 .main-nav .hamburger__line {
@@ -14,6 +24,20 @@
     transition: 300ms;
 }
 
+.main-nav__hamburger.active #hamburger-line-1 {
+    transform: rotate(45deg);
+    top: 1rem;
+}
+
+.main-nav__hamburger.active #hamburger-line-2 {
+    opacity: 0;
+}
+
+.main-nav__hamburger.active #hamburger-line-3 {
+    transform: rotate(135deg);
+    bottom: 0.4rem;
+}
+
 .main-nav__hamburger > p {
     margin: 0;
 }
@@ -22,15 +46,36 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    background-color: var(--background);
 }
 
 .main-nav__items > a {
     margin: 1rem;
 }
 
+.main-nav__items > a:hover,
+.main-nav__items > a.active {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.main-nav__items.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 @media screen and (max-width: 853px) {
     
-    .mobile-only {
+    .main-nav__hamburger {
         display: block;
+    }
+
+    .main-nav__items {
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms;
     }
 }

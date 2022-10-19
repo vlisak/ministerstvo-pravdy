@@ -12,7 +12,7 @@
     line-height: 1.2;
     font-size: 20px;
 
-    --backround: #fff;
+    --background: #fff;
     --color: #000;
 }
 
@@ -20,4 +20,8 @@
     .mobile-only {
         display: none; 
     }
+}
+
+a {
+    color: var(--color);
 }

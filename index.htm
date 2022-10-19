@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="main-nav__hamburger mobile-only">
+    <nav role="navigation" class="main-nav">
+        <div class="main-nav__hamburger">
             <div>
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
+                <div class="hamburger__line" id="hamburger-line-1"></div>
+                <div class="hamburger__line" id="hamburger-line-2"></div>
+                <div class="hamburger__line" id="hamburger-line-3"></div>
             </div>
             <p>Menu</p>
         </div>
         <div class="main-nav__items">
-            <a href="#">Domů</a>
+            <a href="#" class="active">Domovská stránka</a>
             <a href="novinky.htm">Novinky</a>
             <a href="kontakty.htm">Kontakty</a>
             <a href="seznam.htm">Seznam zaměstnanců</a>
             <a href="vyhledavani.htm">Vyhledávání</a>
         </div>
-    </nav>   
-</body>
+    </nav>
     <header>
         <h1>Vítejte na stránkách Ministerstva pravdy</h1>
         <p>Nejlepší ministerstvo od roku <span>1984</span>!</p>
     </header>
+    <script src="main.js"></script>  
+</body>
 </html>
