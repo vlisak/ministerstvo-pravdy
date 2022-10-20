@@ -1,5 +1,7 @@
 @import url(normalize.css);
 @import url(nav.css);
+@import url(header.css);
+@import url(button.css);
 
 @font-face {
     font-family: "Poppins";
@@ -14,6 +16,7 @@
 
     --background: #fff;
     --color: #000;
+    --highlight-color: #f00;
 }
 
 @media screen and (min-width: 426px){
@@ -22,6 +25,18 @@
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
 a {
     color: var(--color);
+}
+
+span {
+    color: var(--highlight-color);
+}
+
+img {
+    max-width: 100%;
 }

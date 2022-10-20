@@ -1,0 +1,39 @@
+header {
+    position: relative;
+    height: calc(50vh - 5rem);
+}
+
+.header--homepage {
+    height: calc(100vh - 5rem);
+}
+
+.header--homepage > img,
+header > img {
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header__container,
+.header--homepage__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--color);
+}
+
+.header--homepage__container {
+    width: 30rem;
+    max-width: 90%;
+    background: var(--background);
+}
+
+.header__container > h1 {
+    padding: 1rem;
+    background-color: var(--background);
+}
