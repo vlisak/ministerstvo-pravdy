@@ -1,5 +1,6 @@
 header {
     position: relative;
+    min-height: 12rem; /* fix pro S telefony */
     height: calc(50vh - 5rem);
 }
 
@@ -10,10 +11,16 @@ header {
 .header--homepage > img,
 header > img {
     z-index: -1;
+    position: fixed;
     object-fit: cover;
     object-position: center;
     height: 100%;
     width: 100%;
+}
+
+header > img {
+    min-height: 12rem; /* fix pro S telefony */
+    height: calc(50vh - 5rem);
 }
 
 .header__container,

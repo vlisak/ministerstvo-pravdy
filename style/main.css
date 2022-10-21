@@ -2,11 +2,16 @@
 @import url(nav.css);
 @import url(header.css);
 @import url(button.css);
+@import url(search.css);
+
+/* Nastavení fontů */
 
 @font-face {
     font-family: "Poppins";
     src: url(Poppins-Regular.ttf) format("truetype");
 }
+
+/* Základní nastavení napříč dokumentem */
 
 :root {
     font-family: "Poppins";
@@ -19,11 +24,7 @@
     --highlight-color: #f00;
 }
 
-@media screen and (min-width: 426px){
-    .mobile-only {
-        display: none; 
-    }
-}
+/* Nastavení textu */
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
@@ -37,6 +38,15 @@ span {
     color: var(--highlight-color);
 }
 
+/* ----------------- */
+
 img {
     max-width: 100%;
 }
+
+main {
+    width: 100%;
+    height: 2000; /* Prozatimní, aby bylo vidět, jak to bude vypadat */
+    background-color: var(--background);
+}
+
