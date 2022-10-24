@@ -3,7 +3,7 @@ const hamburger = document.querySelector(".main-nav__hamburger"),
       text = hamburger.lastElementChild,
       items = document.querySelectorAll(".main-nav__items > a");
 
-hamburger.addEventListener("click", (e) => {
+hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     itemsDiv.classList.toggle("active");
 
@@ -14,7 +14,7 @@ hamburger.addEventListener("click", (e) => {
 });
 
 items.forEach(item => {
-    item.addEventListener("click", (e) => {
+    item.addEventListener("click", () => {
         hamburger.classList.remove("active");
         itemsDiv.classList.remove("active");
 
