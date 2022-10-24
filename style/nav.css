@@ -63,7 +63,7 @@
     display: block;
     height: 0.1rem;
     background-color: var(--highlight-color);
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition: 300ms;
 }
 

@@ -19,6 +19,9 @@
     line-height: 1.2;
     font-size: 20px;
 
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
     --background: #fff;
     --color: #000;
     --highlight-color: #f00;
@@ -46,6 +49,7 @@ img {
 
 main {
     width: 100%;
+    padding: 3rem 0;
     height: 2000; /* Prozatimní, aby bylo vidět, jak to bude vypadat */
     background-color: var(--background);
 }

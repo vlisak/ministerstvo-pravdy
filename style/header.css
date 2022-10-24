@@ -44,3 +44,24 @@ header > img {
     padding: 1rem;
     background-color: var(--background);
 }
+
+.header--homepage__scroll {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    animation: header--homepage__scroll 2000ms infinite;
+}
+
+@keyframes header--homepage__scroll {
+    0% {
+        transform: translate(-50%, 0px);
+    }
+    
+    30% {
+        transform: translate(-50%, 0.5rem);
+    }
+    100% {
+        transform: translate(-50%, 0px);
+    }
+}
+
