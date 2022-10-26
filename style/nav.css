@@ -10,7 +10,7 @@
 }
 
 .main-nav__hamburger {
-    display: none;
+    display: block;
     cursor: pointer;
     margin: 0.5rem;
 }
@@ -48,6 +48,10 @@
     width: calc(100% + 1rem);
     margin-left: -0.5rem;
     background-color: var(--background);
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
 }
 
 .main-nav__items > a {
@@ -84,21 +88,15 @@
     visibility: visible;
 }
 
-@media screen and (max-width: 987px) {
-    .main-nav__hamburger {
-        display: block;
-    }
-
-    .main-nav__items {
-        flex-direction: column;
-        opacity: 0;
-        visibility: hidden;
-        transition: 300ms;
-    }
-}
-
 @media screen and (min-width: 987px) {
+    .main-nav__hamburger {
+        display: none;
+    }
+
     .main-nav__items {
+        visibility: visible;
+        opacity: 1;
+        flex-direction: row;
         height: 4rem;
         align-items: center;
     }
