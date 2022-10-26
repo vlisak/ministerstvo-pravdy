@@ -5,6 +5,11 @@ form.search {
     justify-content: center;
 }
 
+form.search input,
+form.search button {
+    height: 2.5rem;
+}
+
 form > .search__container {
     position: relative;
 }
