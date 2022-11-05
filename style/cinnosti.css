@@ -13,16 +13,15 @@
     min-height: 200px;
     margin: auto
   }
-  .grid-href {
-
-   text-decoration: none; 
-  }
+.material-icons{
+    position: relative;
+    top: 4px;
+}
 @media screen and (min-width: 987px) {
 .grid-container {
     grid-template-columns: auto auto auto;
     max-width: 800px;
     grid-gap: 15px;
-
   }
   .grid-item {
     border-bottom: none;
@@ -30,13 +29,14 @@
     box-shadow: 0 5px 20px rgba(0,0,0,.4);
     background-color: #FFF; 
     height: 100% ;
-    transition: .3s ease;
-   
+    transition: .3s ease; 
+  }
+  .grid-item p{
+    height: 80px;
   }
   .grid-item:hover {
     box-shadow: 0 5px 20px rgba(0,0,0,.8);
-    transform: translateY(-10px) scale(1.02);
-  
+    transform: translateY(-10px) scale(1.02);  
   }
   .grid-container div h3{font-size: 1.1rem; padding-right: 5px; padding-left: 5px;}
   .grid-container div p{font-size: 0.9rem; text-align: left; padding: 10px;}
@@ -48,9 +48,18 @@
     grid-row: 1 / span 2;
     grid-column: 3 ;
   }
+  .item2 a{
+    position: relative;
+    bottom: -51%;
+  }
   .item3 {
     grid-column: 1 / span 3;
     grid-row: 4;
+    margin-top: -15px;
+  }
+  .item3 a{
+    position: relative;
+    bottom: 15px;
   }
 
   
