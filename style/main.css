@@ -52,7 +52,7 @@ img {
 main {
     width: 100%;
     padding: 2rem 0;
-    background-image: url("../images/studentproject_background.jpg");
+    background-image: url("studentproject_background.webp");
     background-repeat:no-repeat;
     background-size: cover;
     background-color: var(--background);
