@@ -3,6 +3,7 @@
     grid-template-columns: none;
     width: 100%;
     margin: auto;
+
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -26,7 +27,8 @@
   .grid-item {
     border-bottom: none;
     border: 1px solid #000000;
-    background-color: #5c565656; 
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    background-color: #FFF; 
     height: 100% ;
     transition: .3s ease;
    
@@ -50,5 +52,6 @@
     grid-column: 1 / span 3;
     grid-row: 4;
   }
+
   
 }

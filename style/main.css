@@ -52,6 +52,9 @@ main {
     width: 100%;
     padding: 2rem 0;
     margin-bottom: 50px;
+    background-image: url("../images/studentproject_background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
     background-color: var(--background);
 }
 
