@@ -46,10 +46,17 @@ header > img {
 }
 
 .header--homepage__scroll {
+    display: none;
     position: absolute;
     bottom: 1rem;
     left: 50%;
     animation: header--homepage__scroll 2000ms infinite;
+}
+
+@media screen and (min-height: 600px) {
+    .header--homepage__scroll {
+        display: block;
+    }
 }
 
 @keyframes header--homepage__scroll {
