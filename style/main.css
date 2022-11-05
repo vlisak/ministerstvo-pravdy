@@ -3,7 +3,7 @@
 @import url(header.css);
 @import url(button.css);
 @import url(search.css);
-@import url(cinnosti.css);
+@import url(grid.css);
 @import url(footer.css);
 
 /* Nastavení fontů */
@@ -50,6 +50,7 @@ img {
 }
 
 main {
+    
     width: 100%;
     padding: 2rem 0;
     background-image: url("../images/studentproject_background.jpg");
