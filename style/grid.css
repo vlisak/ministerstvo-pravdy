@@ -80,11 +80,11 @@
   }
   .directors{
     grid-row: 2;
-    width: 300px;
+    width: 250px;
   }
   .directors-img{
     height: 120px;
-  }
+  } 
 
 
   
