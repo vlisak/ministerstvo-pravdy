@@ -49,6 +49,16 @@ img {
     max-width: 100%;
 }
 
+.important-info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: var(--highlight-color);
+    color: #fff;
+}
+
 main {
     
     width: 100%;
