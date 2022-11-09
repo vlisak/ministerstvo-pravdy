@@ -85,4 +85,7 @@
   .directors-img{
     height: 120px;
   }
+  .detail{
+    display: flex;
+  }
 }
