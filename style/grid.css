@@ -91,5 +91,16 @@
   }
   .detail{
     display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .zamestanec{
+    height: auto !important;
+  }
+  .detail aside p{
+    margin-top: 0px !important;
+    margin-left: 30px;
+    height: auto !important;
+    text-align: left !important;
   }
 }
