@@ -1,0 +1,43 @@
+.kontakt{
+    text-align: center;
+    width: 100%;
+    background: var(--background);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    margin-bottom: 20px;
+  }
+  .kontakt:last-child{
+    margin-bottom: 0px;
+  }
+  .kontakt a{
+    text-decoration: none;
+    color: var(--highlight-color);
+  }
+.mapa{
+    width: 90%;
+    height: 400px;
+
+}
+@media screen and (min-width: 987px) {
+.kontakt{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .mapa{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 500px;
+    display: flex;
+  }
+  .sidlo{
+    width: 900px !important;
+    display: flex;
+  }
+  .sidlo-text{
+    width: 50% !important;
+  }
+}
