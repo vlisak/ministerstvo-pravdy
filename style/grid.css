@@ -87,5 +87,10 @@
   }
   .detail{
     display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .detail p{
+    margin-left: 10px;
   }
 }
