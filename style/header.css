@@ -21,7 +21,7 @@ header > img {
 
 header > img {
     min-height: 12rem; /* fix pro S telefony */
-    height: calc(50vh - 5rem);
+    height: calc(50vh + 5rem);
 }
 
 .header__container,
