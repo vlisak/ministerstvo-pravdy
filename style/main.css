@@ -1,11 +1,13 @@
 @import url(normalize.css);
 @import url(nav.css);
+@import url(breadcrumb-nav.css);
 @import url(header.css);
 @import url(button.css);
 @import url(search.css);
 @import url(grid.css);
 @import url(footer.css);
 @import url(contacts.css);
+@import url(articles-feed.css);
 
 /* Nastavení fontů */
 
@@ -40,6 +42,10 @@ a {
     color: var(--color);
 }
 
+a:hover {
+    font-weight: bold;
+}
+
 span {
     color: var(--highlight-color);
 }
@@ -69,3 +75,14 @@ main {
     background-color: var(--background);
 }
 
+.box--preview {
+    margin: 1rem auto;
+    max-width: 30rem;
+    padding: 1rem;
+    background-color: var(--background);
+    box-shadow: 1px 1px 9px -6px black;
+}
+
+.box--preview > * {
+    margin: 0.5rem;
+}
