@@ -98,11 +98,11 @@ padding-bottom: 10px;
     width: 80%;
     margin: auto;
   }
-  .zamestanec{
+  .detail-page{
     height: auto !important;
     padding: 0 !important;
   }
-  .zamestanec p{
+  .detail-page p{
     padding-left: 10px;
     padding-right: 10px;
   }
