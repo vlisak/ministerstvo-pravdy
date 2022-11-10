@@ -68,4 +68,8 @@ main {
     background-size: cover;
     background-color: var(--background);
 }
+.komisari{
+    width: 600px;
+    margin: auto;
+}
 
