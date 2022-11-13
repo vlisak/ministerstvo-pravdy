@@ -25,8 +25,8 @@
         </div>
         <div class="main-nav__items">
             <a href="index.htm">Domovská stránka</a>
-            <a href="novinky.htm">Novinky</a>
-            <a href="seznam.htm" class="active">Seznam zaměstnanců</a>
+            <a href="novinky.htm" class="active">Novinky</a>
+            <a href="seznam.htm">Seznam zaměstnanců</a>
             <a href="kontakty.htm">Kontakty</a>
             <a href="vyhledavani.htm">Vyhledávání</a>
         </div>
@@ -45,10 +45,23 @@
             <span>></span>
             <p>Portál hlášení</p>
         </div>
-        <article>
-            <header></header>
-        </article>
-        <aside></aside>
+        <section>
+            <form>
+                <label for="Name">Tvoje jméno:</label><br>
+                <input type="text" onfocus="this.value=''" id="Name" name="Name" value="Josef Novák"><br>
+                <label for="bNumber">Tvé rodné číslo:</label><br>
+                <input type="text" id="bNumber" onfocus="this.value=''" name="bNumber" value="123456/1234"><br>
+                <label for="hlaseny">Koho hlásíš:</label><br>
+                <input type="text" id="hlaseny"  onfocus="this.value=''" name="hlaseny" value="Josef Novák Junior"><br>
+                <label for="info">Popis inkriminované situace:</label><br>
+                <textarea name="message" onfocus="this.value=''" rows="10" cols="30">Pan Josef Novák dezinformoval v hospodě..</textarea><br>
+                <label for="checkvalue1">Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
+                <input type="checkbox" id="Prisaha" aria-required="true" value="Potvrzuji že vešekeré poskytnuté informace jsou pravdivé"><br>
+                <label>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
+                <input type="checkbox" id="Poruseni-Pravdy" value="Dotyčný dezinformoval"><br>
+                <input type="submit" id="button" value="Nahlásit!">
+            </form>
+        </section>
     </main>
     <footer>
         <p>©Ministerstvo Pravdy 2022.</p>
