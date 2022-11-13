@@ -41,7 +41,7 @@ header > img {
     background: var(--background);
 }
 
-.header__container > h1 {
+.header__container > * {
     padding: 1rem;
     background-color: var(--background);
 }

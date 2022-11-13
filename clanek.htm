@@ -6,8 +6,8 @@
     <title>Seznam zaměstnanců - Ministerstvo pravdy</title>
     <meta description="Web Ministerstva pravdy">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/article.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 </head>
 <body>
     <div class="important-info">
@@ -25,18 +25,12 @@
         </div>
         <div class="main-nav__items">
             <a href="index.htm">Domovská stránka</a>
-            <a href="novinky.htm">Novinky</a>
-            <a href="seznam.htm" class="active">Seznam zaměstnanců</a>
+            <a href="novinky.htm" class="active">Novinky</a>
+            <a href="seznam.htm">Seznam zaměstnanců</a>
             <a href="kontakty.htm">Kontakty</a>
             <a href="vyhledavani.htm">Vyhledávání</a>
         </div>
     </nav>
-    <header role="header">
-        <div class="header__container">
-            <h1>Článek o pravdě</h1>
-        </div>
-        <img src="images/article-thumbnail.webp" alt="Úvodní obrázek, Obličej s otazníkem.">
-    </header>
     <main role="main">
         <div class="breadcrumb_nav">
             <a href="index.htm">Domů</a>
@@ -45,10 +39,40 @@
             <span>></span>
             <p>Článek o pravdě</p>
         </div>
-        <article>
-            <header></header>
-        </article>
-        <aside></aside>
+        <div class="container">
+            <article class="post">
+                <header>
+                    <div class="header__container">
+                        <h2>Článek o pravdě</h2>
+                    </div>
+                    <img src="images/article-thumbnail.webp" alt="Úvodní obrázek, obličej s otazníkem">
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, architecto. Odio, cumque consequatur animi laboriosam consectetur in facere culpa cum quos tenetur molestiae accusamus earum perspiciatis assumenda quam eligendi voluptatem?</p>
+                <b>Postup ověřování pravdy:</b>
+                <ol>
+                    <li>Najdeme tvrzení</li>
+                    <li>Vložíme do porovnávací databáze</li>
+                    <li>Programem systematicky porovnáme s databází pravdy</li>
+                    <li>Určíme, zda výrok je pravdivý či nepravdivý</li>
+                </ol>
+                <p>Optio eligendi qui commodi tenetur quasi quaerat modi eaque! Voluptatibus, magnam saepe consequatur architecto facilis praesentium, a, repellat fugit beatae cupiditate maiores.</p>
+                <figure>
+                    <img src="images/employee-finding-truth.jpg" alt="">
+                    <figcaption>Náš top zaměstnanec, který zjistil pravdu již 69420krát za tento měsíc</figcaption>
+                </figure>
+                <p>Commodi quidem nostrum magni eaque, iusto consectetur nobis facilis veniam repudiandae blanditiis, deserunt harum! Voluptas dolor enim quaerat qui in, adipisci repellendus.</p>
+            </article>
+            <aside>
+                <b>Mohlo by se vám líbit:</b>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCy7Efrv_-ZUQppX3EStUi5A">Náš youtube kanál</a></li>
+                    <li><a href="minister.htm">Ministr Vlastimil Lisák</a></li>
+                    <li><a href="clanek.htm">Článek o pravdě 1</a></li>
+                    <li><a href="pravda.htm">Jaká je pravda?</a></li>
+                    <li><a href="clanek.htm">Článek o pravdě 2</a></li>
+                </ul>
+            </aside>
+        </div>
     </main>
     <footer>
         <p>©Ministerstvo Pravdy 2022.</p>

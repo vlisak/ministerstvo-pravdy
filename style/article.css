@@ -1,0 +1,33 @@
+main > .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+article, aside {
+    max-width: 40rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: var(--background);
+    box-shadow: 1px 1px 9px -6px var(--color);
+}
+
+article, aside > * {
+    margin: 0.5rem;
+}
+
+aside {
+    position: sticky;
+    top: 6rem;
+}
+
+article > header {
+    margin: -0.5rem;
+    width: calc(100% + 1rem);
+}
+
+article > header > img{
+    position: unset !important;
+    height: 100%;
+}
