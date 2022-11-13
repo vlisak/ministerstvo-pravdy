@@ -1,0 +1,71 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznam zaměstnanců - Ministerstvo pravdy</title>
+    <meta description="Web Ministerstva pravdy">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div class="important-info">
+        <p>Upozornění: jedná se o studentský projekt, vešekeré informace jsou čistě fiktivní!</p>
+        <button>Zavřít <i class="material-icons">close</i></button>
+    </div>
+    <nav role="navigation" class="main-nav">
+        <div class="main-nav__hamburger">
+            <div>
+                <div class="hamburger__line" id="hamburger-line-1"></div>
+                <div class="hamburger__line" id="hamburger-line-2"></div>
+                <div class="hamburger__line" id="hamburger-line-3"></div>
+            </div>
+            <p>Menu</p>
+        </div>
+        <div class="main-nav__items">
+            <a href="index.htm">Domovská stránka</a>
+            <a href="novinky.htm" class="active">Novinky</a>
+            <a href="seznam.htm">Seznam zaměstnanců</a>
+            <a href="kontakty.htm">Kontakty</a>
+            <a href="vyhledavani.htm">Vyhledávání</a>
+        </div>
+    </nav>
+    <header role="header">
+        <div class="header__container">
+            <h1>Portál hlášení</h1>
+        </div>
+        <img src="images/article-thumbnail.webp" alt="Úvodní obrázek, Obličej s otazníkem.">
+    </header>
+    <main role="main">
+        <div class="breadcrumb_nav">
+            <a href="index.htm">Domů</a>
+            <span>></span>
+            <a href="novinky.htm">Novinky</a>
+            <span>></span>
+            <p>Portál hlášení</p>
+        </div>
+        <section>
+            <form>
+                <label for="Name">Tvoje jméno:</label><br>
+                <input type="text" onfocus="this.value=''" id="Name" name="Name" value="Josef Novák"><br>
+                <label for="bNumber">Tvé rodné číslo:</label><br>
+                <input type="text" id="bNumber" onfocus="this.value=''" name="bNumber" value="123456/1234"><br>
+                <label for="hlaseny">Koho hlásíš:</label><br>
+                <input type="text" id="hlaseny"  onfocus="this.value=''" name="hlaseny" value="Josef Novák Junior"><br>
+                <label for="info">Popis inkriminované situace:</label><br>
+                <textarea name="message" onfocus="this.value=''" rows="10" cols="30">Pan Josef Novák dezinformoval v hospodě..</textarea><br>
+                <label for="checkvalue1">Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
+                <input type="checkbox" id="Prisaha" aria-required="true" value="Potvrzuji že vešekeré poskytnuté informace jsou pravdivé"><br>
+                <label>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
+                <input type="checkbox" id="Poruseni-Pravdy" value="Dotyčný dezinformoval"><br>
+                <input type="submit" id="button" value="Nahlásit!">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©Ministerstvo Pravdy 2022.</p>
+    </footer>
+    <script src="main.js"></script>  
+</body>
+</html>
