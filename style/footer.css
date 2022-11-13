@@ -1,9 +1,38 @@
 footer{
+    padding: 1rem;
     border-top: 1px solid rgb(212, 212, 212);
-    height: 50px;
-    background-color: #ffffff;
+    background-color: var(--background);
 }
-footer p{
+footer p,
+footer a,
+footer b,
+footer li {
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.8rem;
+}
+
+footer li {
+    text-align: left;
+}
+
+footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap ;
+}
+
+footer .container__item {
+    margin: 0 1rem;
+    max-width: 12rem;
+}
+
+footer ul {
+    padding-inline-start: 1rem;
+}
+
+@media screen and (min-width: 830px) {
+    footer .container {
+        justify-content: center;
+    }
 }
