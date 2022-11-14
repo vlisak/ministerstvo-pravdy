@@ -1,3 +1,35 @@
+.search-bar {
+    z-index: 9;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    top: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: var(--background);
+    transition: 300ms;
+}
+
+.search-bar.active {
+    top: 0;
+}
+
+.search-bar > * {
+    max-width: 50%;
+    margin: 0.25rem;
+}
+
+.search-button > i,
+.search-bar > button:last-child > i {
+    margin-top: -0.3rem; /* fix pro material icons, nevypadá vizuálně zacentrovaně */
+}
+
+.search-bar > button:last-child {
+    display: none;
+}
+
 form.search {
     display: flex;
     flex-wrap: wrap;
@@ -58,4 +90,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .search-result > * {
     margin: 0.5rem;
+}
+
+@media screen and (min-width: 987px) {
+    .search-bar > button:last-child {
+        display: block;
+    }
 }
