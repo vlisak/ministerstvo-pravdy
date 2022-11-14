@@ -6,8 +6,8 @@
     <title>Seznam zaměstnanců - Ministerstvo pravdy</title>
     <meta description="Web Ministerstva pravdy">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/form.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 </head>
 <body>
     <div class="important-info">
@@ -47,18 +47,19 @@
         </div>
         <section>
             <form>
-                <label for="Name">Tvoje jméno:</label><br>
+                <label for="Name"><span>*</span>Tvoje jméno:</label><br>
                 <input type="text" onfocus="this.value=''" id="Name" name="Name" value="Josef Novák"><br>
-                <label for="bNumber">Tvé rodné číslo:</label><br>
+                <label for="bNumber"><span>*</span>Tvé rodné číslo:</label><br>
                 <input type="text" id="bNumber" onfocus="this.value=''" name="bNumber" value="123456/1234"><br>
-                <label for="hlaseny">Koho hlásíš:</label><br>
+                <label for="hlaseny"><span>*</span>Koho hlásíš:</label><br>
                 <input type="text" id="hlaseny"  onfocus="this.value=''" name="hlaseny" value="Josef Novák Junior"><br>
-                <label for="info">Popis inkriminované situace:</label><br>
+                <label for="info"><span>*</span>Popis inkriminované situace:</label><br>
                 <textarea name="message" onfocus="this.value=''" rows="10" cols="30">Pan Josef Novák dezinformoval v hospodě..</textarea><br>
-                <label for="checkvalue1">Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
+                <label for="checkvalue1"><span>*</span>Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
                 <input type="checkbox" id="Prisaha" aria-required="true" value="Potvrzuji že vešekeré poskytnuté informace jsou pravdivé"><br>
-                <label>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
+                <label><span>*</span>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
                 <input type="checkbox" id="Poruseni-Pravdy" value="Dotyčný dezinformoval"><br>
+                <p><span>*</span> Povinný údaj</p>
                 <button type="submit">Nahlásit</button>
             </form>
         </section>

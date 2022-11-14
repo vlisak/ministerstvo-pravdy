@@ -8,7 +8,6 @@
 @import url(footer.css);
 @import url(contacts.css);
 @import url(articles-feed.css);
-@import url(form.css);
 
 /* Nastavení fontů */
 
@@ -24,6 +23,8 @@
     letter-spacing: 1.2;
     line-height: 1.3;
     font-size: 20px;
+
+    overflow-x: hidden;
 
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -80,7 +81,7 @@ main {
     background-color: var(--background);
 }
 .komisari{
-    width: 600px;
+    max-width: 600px;
     margin: auto;
 }
 
