@@ -2,13 +2,13 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web ministerstva pravdy">
+    <meta name="author" content="Vlastimil Lisák, Karel Sylvar, Eduard Muřický">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seznam zaměstnanců - Ministerstvo pravdy</title>
-    <meta description="Web Ministerstva pravdy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ministr - Ministerstvo pravdy</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 </head>
 <body>
     <div class="important-info">
@@ -37,10 +37,10 @@
             <button class="search-button" title="Vyhledat na stránkách"><i class="material-icons">search</i></button>
         </div>
     </nav>
-    <header role="header">
+    <header>
         <div class="header__container">
             <h1>Ministr Pravdy</h1>
-            <a class="grid-href" href="seznam.htm"><button>Zpět<i class="material-icons">local_police</i></button></a>
+            <button onclick="location.href='seznam.htm';">Zpět<i class="material-icons">local_police</i></button>
         </div>
         <img src="images/employees-header.webp" alt="Úvodní obrázek, zaměstnanci.">
     </header>
@@ -74,7 +74,7 @@
                 <b>Stránky</b>
                 <ul>
                     <li><a href="index.htm">Domovská stránka</a></li>
-                    <ul class="item__sub">
+                    <li><ul class="item__sub">
                         <li><a href="clanek.htm">Pravda</a></li>
                         <li><a href="hlaseni.htm">Portál hlášení</a></li>
                         <li><a href="kontakty.htm#nabor">Nábor zaměstnanců</a></li>
@@ -83,7 +83,7 @@
                         <li><a href="novinky.htm">Vytváření materiálů</a></li>
                         <li><a href="seznam.htm#komisar">Jmenování komisařů</a></li>
                         <li><a href="clanek.htm">Studentský projekt studentů PEF</a></li>
-                    </ul>
+                    </ul></li>
                 <li><a href="novinky.htm">Novinky</a></li>
                 <li><a href="seznam.htm">Seznam zaměstnanců</a></li>
                 <li><a href="kontakty.htm">Kontakty</a></li>
