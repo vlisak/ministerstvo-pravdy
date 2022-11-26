@@ -2,12 +2,12 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web ministerstva pravdy">
+    <meta name="author" content="Vlastimil Lisák, Karel Sylvar, Eduard Muřický">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Seznam zaměstnanců - Ministerstvo pravdy</title>
-    <meta description="Web Ministerstva pravdy">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/form.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -37,7 +37,7 @@
             <a href="vyhledavani.htm">Vyhledávání</a>
         </div>
     </nav>
-    <header role="header">
+    <header>
         <div class="header__container">
             <h1>Portál hlášení</h1>
         </div>
@@ -51,7 +51,7 @@
             <span>></span>
             <p>Portál hlášení</p>
         </div>
-        <section>
+        <div>
             <form>
                 <label for="Name"><span>*</span>Tvoje jméno:</label><br>
                 <input type="text" onfocus="this.value=''" id="Name" name="Name" value="Josef Novák"><br>
@@ -60,15 +60,15 @@
                 <label for="hlaseny"><span>*</span>Koho hlásíš:</label><br>
                 <input type="text" id="hlaseny"  onfocus="this.value=''" name="hlaseny" value="Josef Novák Junior"><br>
                 <label for="info"><span>*</span>Popis inkriminované situace:</label><br>
-                <textarea name="message" onfocus="this.value=''" rows="10" cols="30">Dotyčný dezinformoval v hospodě výrokem...</textarea><br>
-                <label for="checkvalue1"><span>*</span>Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
+                <textarea name="message" id="info" onfocus="this.value=''" rows="10" cols="30">Dotyčný dezinformoval v hospodě výrokem...</textarea><br>
+                <label for="Prisaha"><span>*</span>Potvrzuji že vešekeré poskytnuté informace jsou <mark>pravdivé</mark></label>
                 <input type="checkbox" id="Prisaha" aria-required="true" value="Potvrzuji že vešekeré poskytnuté informace jsou pravdivé"><br>
-                <label><span>*</span>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
+                <label for="Poruseni-Pravdy"><span>*</span>Dotyčný jednoznačně <mark>dezinformoval</mark></label>
                 <input type="checkbox" id="Poruseni-Pravdy" value="Dotyčný dezinformoval"><br>
                 <p><span>*</span> Povinný údaj</p>
                 <button type="submit">Nahlásit</button>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -76,7 +76,7 @@
                 <b>Stránky</b>
                 <ul>
                     <li><a href="index.htm">Domovská stránka</a></li>
-                    <ul class="item__sub">
+                    <li><ul class="item__sub">
                         <li><a href="clanek.htm">Pravda</a></li>
                         <li><a href="hlaseni.htm">Portál hlášení</a></li>
                         <li><a href="kontakty.htm#nabor">Nábor zaměstnanců</a></li>
@@ -85,7 +85,7 @@
                         <li><a href="novinky.htm">Vytváření materiálů</a></li>
                         <li><a href="seznam.htm#komisar">Jmenování komisařů</a></li>
                         <li><a href="clanek.htm">Studentský projekt studentů PEF</a></li>
-                    </ul>
+                    </ul></li>
                 <li><a href="novinky.htm">Novinky</a></li>
                 <li><a href="seznam.htm">Seznam zaměstnanců</a></li>
                 <li><a href="kontakty.htm">Kontakty</a></li>
