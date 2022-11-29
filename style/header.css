@@ -2,7 +2,7 @@ header {
     position: relative;
     min-height: 12rem; /* fix pro S telefony */
     height: calc(50vh - 5rem);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .header--homepage {
