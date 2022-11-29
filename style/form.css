@@ -24,6 +24,7 @@ mark{
     height: 40px;
     margin: auto;
 }
+#Prisaha, #Poruseni-Pravdy{width: 100% !important;}
 
 @media screen and (min-width: 987px) {
 textarea{
