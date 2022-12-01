@@ -4,12 +4,12 @@ form{
 input{
     margin: auto;
     margin-bottom: 20px;
-    width: 100%;
+    width: 95%;
 }
 #prisaha, #poruseni-pravdy{width: auto !important;}
 textarea{
     text-align: left;
-    width: 100%;
+    width: 95%;
     margin-bottom: 10px;
 }
 label{
@@ -24,7 +24,7 @@ mark{
     height: 40px;
     margin: auto;
 }
-#Prisaha, #Poruseni-Pravdy{width: 100% !important;}
+#Prisaha, #Poruseni-Pravdy{width: auto !important;}
 
 @media screen and (min-width: 987px) {
 textarea{

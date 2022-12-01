@@ -84,7 +84,10 @@ main {
     max-width: 600px;
     margin: auto;
 }
-
+.zamestnanci{
+    width: 97%;
+    margin: auto;
+}
 .box--preview {
     margin: 1rem auto;
     max-width: 30rem;
